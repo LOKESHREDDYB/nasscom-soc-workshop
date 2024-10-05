@@ -1,0 +1,2 @@
+# VLSI-SoC-Design-RTL2GDS Flow using OpenLANE/Sky130
+VSDSquadron, a cutting-edge development board based on the RISC-V architecture that is fully open-source and this processor has general-purpose interfaces that enables you to evaluate features of RISC-V ISA. The VSDSquadron chip appears to be a specialized development board often used in projects involving in various sensors, communication interfaces, and processing capabilities to support complex tasks.
