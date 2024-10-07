@@ -20,6 +20,9 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 
 ![image](https://github.com/user-attachments/assets/0bac2173-e9b9-41f5-b68a-965e18294219)
 
+![image](https://github.com/user-attachments/assets/4224a4f9-a2c2-4cbe-84c8-c2eea2e664b1)
+
+![image](https://github.com/user-attachments/assets/e776f29a-5850-4afc-8bb6-237aee3608e2)
 
 
 
