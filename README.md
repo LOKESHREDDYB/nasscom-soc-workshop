@@ -10,9 +10,8 @@ vsdflow' is an  automated EDA tool based on TCL scripting which involves impleme
 #### Overview
 OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault and custom methodology scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII - this capability will be released in the coming weeks with completed SoC design examples that have been sent to SkyWater for fabricaiton. 
 
-## Setting up OpenLANE
-Working Directory:
-* work/tools/
+## OpenLANE Directory Struture
+
 * work/tools/openlane_working_dir/openlane  (Directory to invoke the tool for working)
 * sky130A will be used for this project
 * pdks (skywater: all the pdk related files, timing files, tech files, lef, cell lef, open_pdks: silicon foundry files (any foundary) they are compatible to work with commercial tools and this convert commercial to opensource suport using scripts/files, sky130A: is for purely for opensource applications/designs)
