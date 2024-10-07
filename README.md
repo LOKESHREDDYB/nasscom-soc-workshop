@@ -17,7 +17,9 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 * pdks (skywater: all the pdk related files, timing files, tech files, lef, cell lef, open_pdks: silicon foundry files (any foundary) they are compatible to work with commercial tools and this convert commercial to opensource suport using scripts/files, sky130A: is for purely for opensource applications/designs)
 * sky130A (libs.ref: contains all the process specific layer info, timing (PVT corners), libs, lef, verilog,rtl; lib.tech: specific to the tool-layout,spice,maic,qflow,openlane)
 * We will use sky130A variant in the design implementation with sky130_fd_sc_hd
-* 
+
+![image](https://github.com/user-attachments/assets/0bac2173-e9b9-41f5-b68a-965e18294219)
+
 
 
 
