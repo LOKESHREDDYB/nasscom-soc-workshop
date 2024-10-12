@@ -69,4 +69,22 @@ Screenshots examples for the reference.
 
 ![image](https://github.com/user-attachments/assets/02110eb5-8d89-424c-9a31-bc6c5fe1bdeb)
 
+![image](https://github.com/user-attachments/assets/7f0b175c-11e5-4d7c-b546-92dbc366b1a8)
+
+![image](https://github.com/user-attachments/assets/31012a31-f858-4dfe-84b5-b6280d7c0162)
+
+![image](https://github.com/user-attachments/assets/64523b16-29e7-472c-961d-445ca8ae1497)
+
+![image](https://github.com/user-attachments/assets/a2fe8e41-a5a8-4032-8744-040256fcbbc0)
+
+#### Calculating D-Flop Ratio in the design from synthesis statistics report:
+
+Flop Ratio (FR) = (No. of Flip Flops [dfxtp_2:1613]/Total Number of Cells [14876])*100
+FR=0.108429685*100 = 10.85%
+
+![image](https://github.com/user-attachments/assets/29bf8ae9-05d5-4091-a7bb-f6da5b4a993f)
+
+## Chapter-2: Floorplan and INTRO to Library Cell
+
+
 
