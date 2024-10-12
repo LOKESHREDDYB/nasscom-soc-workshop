@@ -89,11 +89,11 @@ FR=0.108429685*100 = 10.85%
 Implementing the picorv32a Design FP Using OpenLANE flow.
 
 1. Define die area in Microns.
-2. Load FP DEF in Magic Tool.
+2. Load FP DEF, LEF, TECh files in Magic Tool.
     -  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/07-09_20-37/results/floorplan/
     -  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
-4. Execute congestion-Aware based Placement.
-5. Load placement DEF in Magic Tool.
+3. Execute congestion-Aware based Placement.
+4. Load placement DEF in Magic Tool.
 
 The following are the executing commands and image references for the above steps: 
 1. cd Desktop/work/tools/openlane_working_dir/openlane
@@ -111,23 +111,29 @@ The following are the executing commands and image references for the above step
 
 ![image](https://github.com/user-attachments/assets/ce07f689-6ab0-463c-b1ee-751ad9a21311)
 
-#### Die area of the chip is X: 660um & Y: 671.4um  
+#### Step-1: Die area of the chip is X: 660um & Y: 671.4um  
 ![image](https://github.com/user-attachments/assets/71608836-52f5-4fd2-af46-05bed7c68a4e)
 
+#### Step-2: Load FP DEF, LEF, TECh files in Magic Tool.  
 Floorplan Loaded in Magic using tech file, lef file, def file
 1. cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/07-09_20-37/results/floorplan/
-2. magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+2. magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/floorplan/merged_unpadded.lef def read picorv32a.floorplan.def &
 
 ![image](https://github.com/user-attachments/assets/5711f76c-b9a5-4866-8735-52223f60a107)
 
 ![image](https://github.com/user-attachments/assets/736d78d6-dc78-4b9f-895a-82e07f56f259)
+#### Std cells and macoros at the bottom corner 
+![image](https://github.com/user-attachments/assets/8c66a32d-ec07-4a5c-943b-c6d977c5f1a2)
 
+#### Step-3: Execute congestion-Aware based Placement.  
 
+Executed the placement run using congestion and timing constraints (run_placement).
+![image](https://github.com/user-attachments/assets/76401a26-bc0f-43ea-8a1a-962bff289bd0)
 
-
-
-
-
+#### Step-4: Load Placement DEF file in Magic Tool.
+loaded def using the below command 
+-    magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
+lef read ../../tmp/placement/merged_unpadded.lef def read picorv32a.placement.def &
 
 
 
