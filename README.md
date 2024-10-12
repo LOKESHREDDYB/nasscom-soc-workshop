@@ -96,14 +96,14 @@ Implementing the picorv32a Design FP Using OpenLANE flow.
 5. Load placement DEF in Magic Tool.
 
 The following are the executing commands and image references for the above steps: 
-cd Desktop/work/tools/openlane_working_dir/openlane
-alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
-docker
-./flow.tcl -interactive
-package require openlane 0.9
-run_synthesis
-run_floorplan
-exit
+1. cd Desktop/work/tools/openlane_working_dir/openlane
+2. alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+3. docker
+4. ./flow.tcl -interactive
+5. package require openlane 0.9
+6. run_synthesis
+7. run_floorplan
+8. exit
 
 ![image](https://github.com/user-attachments/assets/3f27f271-1e68-4327-8781-0f2ddfbad4d1)
 
@@ -113,6 +113,19 @@ exit
 
 #### Die area of the chip is X: 660um & Y: 671.4um  
 ![image](https://github.com/user-attachments/assets/71608836-52f5-4fd2-af46-05bed7c68a4e)
+
+Floorplan Loaded in Magic using tech file, lef file, def file
+1. cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/07-09_20-37/results/floorplan/
+2. magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+![image](https://github.com/user-attachments/assets/5711f76c-b9a5-4866-8735-52223f60a107)
+
+![image](https://github.com/user-attachments/assets/736d78d6-dc78-4b9f-895a-82e07f56f259)
+
+
+
+
+
 
 
 
