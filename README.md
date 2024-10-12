@@ -25,30 +25,28 @@ OpenLANE is an automated RTL to GDSII flow based on several components including
 ![image](https://github.com/user-attachments/assets/e776f29a-5850-4afc-8bb6-237aee3608e2)
 
 
-# Change directory to openlane flow directory
+#### Change directory to openlane flow directory
 cd Desktop/work/tools/openlane_working_dir/openlane
 
-# alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
-# Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command
+#### alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+#### We have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command
 docker
 
-# Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command
+#### OpenLANE flow contained docker sub-system so invoke the OpenLANE flow in the Interactive mode using the following command
 ./flow.tcl -interactive
 
-# Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow
+#### OpenLANE flow required packages for proper functionality of the OpenLANE flow
 package require openlane 0.9
 
-# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+#### Open the design with some necessary files and directories of 'picorv32a' using the below command
 prep -design picorv32a
 
-# Now that the design is prepped and ready, we can run synthesis using following command
+#### Run synthesis flow using below command
 run_synthesis
 
-# Exit from OpenLANE flow
+#### Exit from OpenLANE flow & docker sub-system
 exit
 
-# Exit from OpenLANE flow docker sub-system
-exit
 
 Screenshots examples for the reference.
 ![image](https://github.com/user-attachments/assets/aa91bbd1-7393-4620-9f43-194a3d3c7a02)
