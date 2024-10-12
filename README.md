@@ -86,5 +86,35 @@ FR=0.108429685*100 = 10.85%
 
 ## Chapter-2: Floorplan and INTRO to Library Cell
 
-a
+Implementing the picorv32a Design FP Using OpenLANE flow.
+
+1. Define die area in Microns.
+2. Load FP DEF in Magic Tool.
+    -  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/07-09_20-37/results/floorplan/
+    -  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+4. Execute congestion-Aware based Placement.
+5. Load placement DEF in Magic Tool.
+
+The following are the executing commands and image references for the above steps: 
+cd Desktop/work/tools/openlane_working_dir/openlane
+alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+docker
+./flow.tcl -interactive
+package require openlane 0.9
+run_synthesis
+run_floorplan
+exit
+
+![image](https://github.com/user-attachments/assets/3f27f271-1e68-4327-8781-0f2ddfbad4d1)
+
+![image](https://github.com/user-attachments/assets/072b124d-3625-4f8a-8127-97a676f543f9)
+
+![image](https://github.com/user-attachments/assets/ce07f689-6ab0-463c-b1ee-751ad9a21311)
+
+#### Die area of the chip is X: 660um & Y: 671.4um  
+![image](https://github.com/user-attachments/assets/71608836-52f5-4fd2-af46-05bed7c68a4e)
+
+
+
+
 
