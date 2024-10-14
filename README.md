@@ -1,4 +1,4 @@
-# VLSI-SoC-Design-RTL2GDS Flow using OpenLANE/Sky130
+![image](https://github.com/user-attachments/assets/17fc6f25-4679-444d-aba6-3f6ece6e8e4e)# VLSI-SoC-Design-RTL2GDS Flow using OpenLANE/Sky130
 VSDSquadron, a cutting-edge development board based on the RISC-V architecture that is fully open-source and this processor has general-purpose interfaces that enable features of RISC-V instruction set architecture 
 (ISA). In this workshop, I'm  focused on implementing the primary macro/block of the VSDSquadron processor using OpenLANE from RTL2GDSII. The VSDSquadron chip is a specialized development board often used in projects involving in various sensors, communication interfaces, and processing capabilities to support complex tasks.
 
@@ -134,6 +134,24 @@ Executed the placement run using congestion and timing constraints (run_placemen
 loaded def using the below command 
 -    magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
 lef read ../../tmp/placement/merged_unpadded.lef def read picorv32a.placement.def &
+
+Placement of std cells and macros of the deisgn
+![image](https://github.com/user-attachments/assets/84dd21e0-0977-4dbf-9239-2d97951c80f1)
+
+The below picture shows the the legally placed Std Cells using openlane flow.
+![image](https://github.com/user-attachments/assets/4dffa12f-3ced-4b00-b32f-93dec12371a9)
+
+### Std cell library characterizationusing Magic Layout and ngspice 
+#### cd Desktop/work/tools/openlane_working_dir/openlane
+#### git clone https://github.com/nickson-jose/vsdstdcelldesign
+#### cd vsdstdcelldesign
+#### cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+#### magic -T sky130A.tech sky130_inv.mag &
+#### 
+![image](https://github.com/user-attachments/assets/f6a8a80c-0114-4123-a6dd-eded7d450e83)
+
+![image](https://github.com/user-attachments/assets/a7016fa2-4348-4576-88cd-636ad0d1385e)
+
 
 
 
