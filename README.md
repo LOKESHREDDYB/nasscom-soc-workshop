@@ -147,11 +147,11 @@ The below picture shows the the legally placed Std Cells using openlane flow.
 #### cd vsdstdcelldesign
 #### cp ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
 #### magic -T sky130A.tech sky130_inv.mag &
-#### 
+
 ![image](https://github.com/user-attachments/assets/f6a8a80c-0114-4123-a6dd-eded7d450e83)
 
 ![image](https://github.com/user-attachments/assets/a7016fa2-4348-4576-88cd-636ad0d1385e)
 
-
+### SPICE extraction of the design using Magic.
 
 
